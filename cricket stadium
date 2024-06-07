@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int l,b;
+    scanf("%d%d",&l,&b);
+    int perimeter=2*(l+b);
+    int q=l*b;
+    printf("%d\n",perimeter);
+    printf("%d\n",q);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
