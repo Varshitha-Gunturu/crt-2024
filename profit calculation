@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ int x,a,b;
+    scanf("%d%d%d",&x,&a,&b);
+    int v=x*a;
+    int c=b*x;
+    int p=v-c-100;
+    printf("%d",p);
+    return 0;
+}
