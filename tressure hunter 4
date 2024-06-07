@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int total_coins, ben_share_pct, blackbeard_share_pct;
+    int ben_share, blackbeard_share, other_pirates_share;
+
+    // Read the number of gold coins and the share percentages
+    scanf("%d %d %d", &total_coins, &ben_share_pct, &blackbeard_share_pct);
+
+    // Calculate Long Ben's share
+    ben_share = (ben_share_pct * total_coins) / 100;
+
+    // Remaining treasure after giving Long Ben's share
+    int remaining_treasure = total_coins - ben_share;
+
+    // Calculate Blackbeard's share from the remaining treasure
+    blackbeard_share = (blackbeard_share_pct * remaining_treasure) / 100;
+
+    // Remaining treasure after giving Blackbeard's share
+    remaining_treasure -= blackbeard_share;
+
+    // The other three pirates share the remaining treasure equally
+    other_pirates_share = remaining_treasure / 3;
+
+    // Print the shares
+    printf("%d\n", ben_share);
+    printf("%d\n", blackbeard_share);
+    printf("%d\n", other_pirates_share);
+
+    return 0;
+}
