@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int a;
+    scanf("%d",&a);
+    int n=a%10;
+     if(n>=5){
+        printf("%d\n",(a+(10-n)));
+    }else{
+        printf("%d\n",(a-n));
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
