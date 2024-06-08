@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int area() 
+{
+    // Write C code here
+    int l,b;
+    scanf("%d%d",&l,&b);
+    int r=l*b;
+    return r;
+}
+int main()
+{
+    int k=area();
+    printf("%d",k);
+}
